@@ -49,3 +49,4 @@ GitHub Issues & Milestones
 Link: https://github.com/tylersco/CAV_Rank/milestones
 
 ### Project Plan
+![alt tag](https://github.com/tylersco/CAV_Rank/blob/master/ProjectPlan.PNG)
