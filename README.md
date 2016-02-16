@@ -30,11 +30,11 @@ Who wants to go to a bad concert? As music enthusiasts, we think an application 
 4. Use Agile Methodologies and organization of features to help plan the time needed to complete requirements 
 
 ### Project Requirements
-| Type of Requirement: | Statement           | ID |  Time to complete(hours)    |
+| Type of Requirement: | Statement           | ID  |  Time to complete(hours)    |
 | ------------- |:-------------:| -----:|----------|
 | User      | As a user, I want to be able to review a concert so that I can share my experience with others. | 0001 | 6  |
 | User      | As a user, I want to be able to read reviews of concerts, so that I can judge if a concert is worth going to.      |   0002 | 6 |
-| User | As a user, I want be able to follow different artists      |    0003 | 4  |
+| User | As a user, I want be able to follow different artists.      |    0003 | 4  |
 | User | As a user, I want be able to report feedback to admins of the website.     |    0004 | 4  |
 | Functional | As an admin, I would like to be able to add/delete concerts, artists, and venues.       |    0005 | 8  |
 | Functional | As an admin, I would like to be able to monitor bugs and issues reported by users.         |    0006 | 5 | 
