@@ -38,8 +38,9 @@ Who wants to go to a bad concert? As music enthusiasts, we think an application 
 | User | As a user, I want be able to report feedback to admins of the website, so the website can improve and become more efficient.     |    0004 | 4  |
 | Functional | As an admin, I would like to be able to add/delete concerts, artists, and venues, so I can keep the website up-to-date.       |    0005 | 8  |
 | Functional | As an admin, I would like to be able to monitor bugs and issues reported by users, so I can improve the website.         |    0006 | 5 | 
-| Functional | As a user, I want the website to be simple and easy to use.       |    0007 | 8 |
-| Non-Functional | As an admin, I want a logo to help draw in users, so the website can gain popularity.         |    0008 | 3 |  
+| Non-Functional | As a user, I want the website to be simple and easy to use.       |    0007 | 8 |
+| Non-Functional | As an admin, I want a logo to help draw in users, so the website can gain popularity.         |    0008 | 3 | 
+| Non-Functional | As a user and admin, I want the website pages to load in under 500 ms, so I can be more efficient. | 0009 | 8 |
 
 ### Development Methodology
 Agile
@@ -49,4 +50,4 @@ GitHub Issues & Milestones
 Link: https://github.com/tylersco/CAV/milestones
 
 ### Project Plan
-![alt tag](https://github.com/tylersco/CAV_Rank/blob/master/ProjectPlan.PNG)
+![alt tag](https://github.com/tylersco/CAV/blob/master/ProjectPlan.PNG)
