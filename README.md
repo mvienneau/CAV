@@ -32,11 +32,11 @@ Who wants to go to a bad concert? As music enthusiasts, we think an application 
 ### Project Requirements
 | Type of Requirement: | Statement           | ID  |  Time to complete(hours)    |
 | ------------- |:-------------:| -----:|----------|
-| User      | As a user, I want to be able to review a concert so that I can share my experience with others. | 0001 | 6  |
+| User      | As a user, I want to be able to review a concert, so that I can share my experience with others. | 0001 | 6  |
 | User      | As a user, I want to be able to read reviews of concerts, so that I can judge if a concert is worth going to.      |   0002 | 6 |
-| User | As a user, I want be able to follow different artists.      |    0003 | 4  |
-| User | As a user, I want be able to report feedback to admins of the website.     |    0004 | 4  |
-| Functional | As an admin, I would like to be able to add/delete concerts, artists, and venues.       |    0005 | 8  |
-| Functional | As an admin, I would like to be able to monitor bugs and issues reported by users.         |    0006 | 5 | 
+| User | As a user, I want be able to follow different artists, so it is easier for other users to connect with me.       |    0003 | 4  |
+| User | As a user, I want be able to report feedback to admins of the website, so the website can improve and become more efficient.     |    0004 | 4  |
+| Functional | As an admin, I would like to be able to add/delete concerts, artists, and venues, so I can keep the website up-to-date.       |    0005 | 8  |
+| Functional | As an admin, I would like to be able to monitor bugs and issues reported by users, so I can improve the website.         |    0006 | 5 | 
 | Non-Functional | As a user, I want the website to be simple and easy to use.       |    0007 | 8 |
-| Non-Functional | As an admin, I want a logo to help draw in users.         |    0008 | 3 |  
+| Non-Functional | As an admin, I want a logo to help draw in users, so the website can gain popularity.         |    0008 | 3 |  
