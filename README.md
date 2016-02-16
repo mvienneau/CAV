@@ -40,3 +40,12 @@ Who wants to go to a bad concert? As music enthusiasts, we think an application 
 | Functional | As an admin, I would like to be able to monitor bugs and issues reported by users, so I can improve the website.         |    0006 | 5 | 
 | Non-Functional | As a user, I want the website to be simple and easy to use.       |    0007 | 8 |
 | Non-Functional | As an admin, I want a logo to help draw in users, so the website can gain popularity.         |    0008 | 3 |  
+
+### Development Methodology
+Agile
+
+### Project Tracking Software
+GitHub Issues & Milestones
+Link: https://github.com/tylersco/CAV_Rank/milestones
+
+### Project Plan
