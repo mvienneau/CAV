@@ -12,6 +12,8 @@ Brennon Lee: BrennonLee
 
 Justin Hill: 399123
 
+Michael Vienneau: mvienneau
+
 ### Project Description
 CAV is an account-based website that allows users the ability to review and search different concerts, artists, and venues while connecting with other music enthusiasts. 
 
