@@ -62,3 +62,25 @@ a:link, a:visited{
 a:hover, a:active{
 	color: black;
 }
+
+nav{
+	height: 95px;
+}
+.welcome{
+	width: 640px;
+}
+
+.titleheight{
+	height: 95px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.imgmarge{
+	margin: 3px;
+}
+
+.trendwidth{
+	width: 280px
+}
