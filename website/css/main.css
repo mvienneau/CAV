@@ -1,3 +1,5 @@
+/*clears defaults for all browers.*/
+/*Allows universal compatibility*/
 *,
 *:before,
 *:after{
@@ -8,26 +10,27 @@
 	box-sizing: border-box;
 }
 
-
+/*Pushes all left classes to left side of page*/
 .left{
 	float: left;
 }
 
+/*Pushes all right classes to right side of page*/
 .right{
 	float: right;
 }
-
+/*The whole body class*/
 .contain{
 	width: 960px;
 	margin: 0px auto;
 }
-
+/*clear child elements. Allows elements to be stacked horizontally */
 .clearfix{
 	display: table;
 	content: " ";
 	clear: both;
 }
-
+/*Box effect for all box classes*/
 .box{
 	margin: 5px;
 	color: #000;
@@ -43,22 +46,23 @@
 	box-shadow: 3px 3px 3px 3px rgba(0,0,0,.9);
 	margin-top: 9px;
 }
-
+/*splits top boxes across screen*/
 .half{
 	width: 460px;
 	margin: 0px auto;
 }
-
+/*Elements now in horizontal display*/
 nav ul li{
 	display: inline-block;
 	margin-right: 10px;
 	text-decoration-style: none;
 }
-
+/*link effects*/
 a:link, a:visited{
 	color: green;
 }
 
+/*link effects*/
 a:hover, a:active{
 	color: black;
 }
@@ -66,21 +70,22 @@ a:hover, a:active{
 nav{
 	height: 95px;
 }
+/*sets welcome box width*/
 .welcome{
 	width: 640px;
 }
-
+/*Sets Welcome to CAV title height*/
 .titleheight{
 	height: 95px;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-
+/*sets margin for image inside of 940x360 pic*/
 .imgmarge{
 	margin: 3px;
 }
-
+/*Trending box width*/
 .trendwidth{
 	width: 280px
 }
