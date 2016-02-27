@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function addUser(event){
-	event.preventDefault();
+	//event.preventDefault();
 	var errorCount = 0;
 	$('#create-account input').each(function(index, val) {
 		if($(this).val() === '') {errorCount++; }
@@ -23,7 +23,7 @@ function addUser(event){
 		$.ajax({
 			type: 'POST',
 			data: newUser,
-			url: '/createAcc/adduser',
+			url: '/createAcc',
 			success: function(response) {
 				alert('Sucessfully Created Account');
 			},

@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+router.post('/', function(req, res) {
+  console.log(req.body);
+  res.redirect('/')
+});
+
 /* GET users listing. */
 router.get('/', function(req, res) {
   var db = req.db;
@@ -9,16 +14,11 @@ router.get('/', function(req, res) {
 
   	db.each("SELECT username FROM user", function(err, row) {
     	collection.push(row.username);
-  	});
+    });
 
-  	res.render('createAcc', { title: 'CAV' });
+  res.render('createAcc', { title: 'CAV' });
   })
 
-});
-
-router.post('/adduser', function(req, res) {
-  console.log(req.body);
-	res.redirect('/');
 });
 
 module.exports = router;
