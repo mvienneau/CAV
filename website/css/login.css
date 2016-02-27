@@ -91,3 +91,10 @@ nav{
 div form fieldset p{
 	color: red;
 }
+.myButton {
+    /*background:url(./CAV-baselogo.PNG) no-repeat;*/
+    cursor:pointer;
+    width: 460px;
+    height: 90px;
+    border: none;
+}
