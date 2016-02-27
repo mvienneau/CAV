@@ -21,6 +21,7 @@ router.get('/', function(req, res, next) {
 
 
   res.render('index', { title: 'CAV' });
+
 });
 
 router.get('/search', function(req, res, next) {
