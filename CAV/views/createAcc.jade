@@ -8,6 +8,8 @@ html
     link(type='image/x-icon', href='favicon.ico', rel='shortcut icon')
     title CAV Home
   body.contain
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/global.js')
     .clearfix
       .box.half.titleheight.left
         h1 Welcome to CAV
@@ -24,7 +26,7 @@ html
           li(style='margin-left: 3px;')
               button#Login(onclick="location.href='login'") Login
       .box.create
-        form(id='create account', action='#', method='post', accept-charset='UTF-8')
+        form(id='create-account', action='#', method='post', accept-charset='UTF-8')
           fieldset
             legend Create Account
             input#submitted(type='hidden', name='submitted', value='1')
@@ -37,6 +39,7 @@ html
             input#email(type='text', name='email', maxlength='50')
             label(for='password') Password * :
             input#password(type='password', name='password', maxlength='50')
-            input(type='submit', name='Submit', value='Submit')
+            button#btnSubmit Submit
+            //input(type='submit', name='Submit', value='Submit')
     footer.box
       h2 This is our footer
