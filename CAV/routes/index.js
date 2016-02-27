@@ -10,28 +10,19 @@ var db = new sqlite3.Database(file);
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
+	//DO NOT UNCOMMENT UNLESS YOU WANT 5000000 DRAKES IN OUR TABLE
 	/*
   	db.serialize(function(){
   		db.run("INSERT INTO artist VALUES (null, ?, null, null, null)", "drake")
-  		db.each("SELECT artist_name FROM artist", function(err, row) {
-      		console.log("Artist Name: "+row.artist_name);
-  		});
-  	})
+  		db.each("SELECT artist_name FROM artist", function(err, row) {  
+      		console.log("Artist Name: "+row.artist_name);  
+  		});  
+  	})	
 	*/
 
 
   res.render('index', { title: 'CAV' });
 });
-
-router.get('/search', function(req, res, next) {
-  res.render('search', { title: 'CAV' });
-});
-
-router.get('/account', function(req, res, next) {
-  res.render('account', { title: 'CAV' });
-});
-
-router.get('/')
 
 //db.close();
 
