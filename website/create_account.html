@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--Link to css style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" type="text/css" href="css/create_account.css">
 
 		<!--Linking favicon -->
 		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
@@ -25,16 +25,19 @@
 
 				</ul>
 			</nav>
-			<div class="box loginwidth ">
-				<form id='login' action='#' method='post' accept-charset='UTF-8'>
+			<div class="box create ">
+				<form id='create account' action='#' method='post' accept-charset='UTF-8'>
 					<fieldset >
-						<legend>Login</legend>
+						<legend>Create Account</legend>
 						<input type='hidden' name='submitted' id='submitted' value='1'/>
 						<p>* requried fields</p>
 		 
 						<label for='username' >UserName*:</label>
 						<input type='text' name='username' id='username'  maxlength="50" />
-		 
+
+						<label for='fullname' >First/Last Name*:</label>
+						<input type='text' name='fullname' id='fullname'  maxlength="50" />
+ 
 						<label for='password' >Password*:</label>
 						<input type='password' name='password' id='password' maxlength="50" />
 		 

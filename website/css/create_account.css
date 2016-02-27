@@ -80,11 +80,13 @@ nav{
 	margin-bottom: 10px;
 }
 
-.loginwidth{
-    width: 290px;
+.create{
 	padding: 2px;
 	margin: 20px;
 	margin-top: 105px;
+    height: 130px;
+    width: 310px;
+
 }
 
 /*For requried field*/
