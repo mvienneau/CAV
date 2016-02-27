@@ -81,7 +81,8 @@ nav{
 }
 
 .loginwidth{
-    width: 290px;
+  width: 260px;
+	height: 110px;
 	padding: 2px;
 	margin: 20px;
 	margin-top: 105px;
@@ -90,4 +91,6 @@ nav{
 /*For requried field*/
 div form fieldset p{
 	color: red;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
