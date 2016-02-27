@@ -1,8 +1,11 @@
-$('#btnSubmit').on('click', addUser);
+$(document).ready(function() {
+
+    $('#btnSubmit').on('click', addUser);
+
+});
 
 function addUser(event){
 	event.preventDefault();
-
 	var errorCount = 0;
 	$('#create-account input').each(function(index, val) {
 		if($(this).val() === '') {errorCount++; }
@@ -11,27 +14,26 @@ function addUser(event){
 	if(errorCount === 0){
 
 		var newUser = {
-			'username': $('#addUser fieldset input#inputUserName').val(),
-			'fullname': $('#addUser fieldset input#inputUserFullName').val(),
-			'email': $('#addUser fieldset input#inputUserEmail').val(),
-			'password': $('#addUser fieldset input#inputUserPassword').val()
+			'username': $('#create-account fieldset input#username').val(),
+			'fullname': $('#create-account fieldset input#fullname').val(),
+			'email': $('#create-account fieldset input#email').val(),
+			'password': $('#create-account fieldset input#password').val()
 		}
 
 		$.ajax({
 			type: 'POST',
 			data: newUser,
-			url: '/createAcc',
-			dataType: 'JSON'
-		}).done(function( response )) {
-			if (response.msg === '') {
+			url: '/createAcc/adduser',
+			success: function(response) {
 				alert('Sucessfully Created Account');
-			}else {
+			},
+			error: function(response) {
 				alert('Error: ' + response.msg);
 			}
 		});
 	}
 	else{
-		alert('Please Fill in all Fields');
+		alert('Please fill in all fields');
 		return false;
 	}
 };

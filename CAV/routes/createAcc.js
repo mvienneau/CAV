@@ -14,13 +14,11 @@ router.get('/', function(req, res) {
   	res.render('createAcc', { title: 'CAV' });
   })
 
-
 });
 
-router.post('/', function(req, res) {
-	console.log(req.body);
+router.post('/adduser', function(req, res) {
+  console.log(req.body);
 	res.redirect('/');
-
 });
 
 module.exports = router;
