@@ -79,3 +79,10 @@ nav{
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
+
+.loginwidth{
+	width: 280px;
+	padding: 2px;
+	margin: 20px;
+	margin-top: 105px;
+}

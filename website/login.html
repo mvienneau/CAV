@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--Link to css style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/account.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
 		
 		<title>CAV Home</title>
 	</head>
@@ -19,8 +19,26 @@
 					<li style="margin-left: 3px;"><a href="search.html">Search</a></li>
 					<li style="margin-right: 3px;"><a href="account.html">Account</a></li>
 					<li style="margin-right: 3px;"><a href="login.html">Login</a></li>
+
 				</ul>
 			</nav>
+			<div class="box loginwidth ">
+				<form id='login' action='#' method='post' accept-charset='UTF-8'>
+					<fieldset >
+						<legend>Login</legend>
+						<input type='hidden' name='submitted' id='submitted' value='1'/>
+		 
+						<label for='username' >UserName*:</label>
+						<input type='text' name='username' id='username'  maxlength="50" />
+		 
+						<label for='password' >Password*:</label>
+						<input type='password' name='password' id='password' maxlength="50" />
+		 
+						<input type='submit' name='Submit' value='Submit' />
+	 
+					</fieldset>
+				</form>
+			</div>
 		</div>		
 		<footer class="box">
 			<h2>This is our footer</h2>
