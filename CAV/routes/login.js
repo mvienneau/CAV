@@ -11,9 +11,9 @@ router.get('/', function(req, res) {
     	collection.push(row.username);
   	});
 
-  	res.render('index', { title: 'CAV' });
+  	res.render('login', { title: 'CAV' });
   })
-  
+
 
 });
 
