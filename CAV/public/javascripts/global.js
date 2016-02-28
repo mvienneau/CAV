@@ -14,7 +14,6 @@ function addUser(event){
 	});
 
 	if(errorCount === 0){
-		console.log('test');
 		var newUser = {
 			'username': $('#create-account fieldset input#username').val(),
 			'fullname': $('#create-account fieldset input#fullname').val(),
@@ -25,13 +24,14 @@ function addUser(event){
 			type: 'POST',
 			data: newUser,
 			url: '/createAcc',
-			dataType: 'JSON',
+			dataType: 'json',
 			success: function(response) {
-				if (response == true) {
+				if (response.success == true) {
 					alert('Sucessfully Created Account');
 					window.location.href = "/"
 				}
 				else {
+					console.log(response);
 					alert('Account cannot be created. Please try again.');
 					window.location.href = "/createAcc"
 				}
