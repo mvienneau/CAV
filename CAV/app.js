@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -11,7 +11,6 @@ var account = require('./routes/account');
 var search = require('./routes/search');
 var login = require('./routes/login');
 var createAcc = require('./routes/createAcc');
-
 
 var app = express();
 
@@ -36,23 +35,18 @@ app.use(function(req,res,next){
 })
 //******************************
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+//app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.use('/', index);
 app.use('/search', search);
 app.use('/account', account);
 app.use('/login', login);
 app.use('/createAcc', createAcc);
-
-//app.use('/users', users);
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

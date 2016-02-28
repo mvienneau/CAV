@@ -3,7 +3,7 @@ var db = new sqlite3.Database('cav.db')
 
 db.serialize(function () {
 
-  db.run("create table user ( user_id integer primary key, username varchar(15) not null, fullname varchar(40) not null, email varchar(50), password varchar(30) not null);");
+  db.run("create table user ( user_id integer primary key, username varchar(20) not null, fullname varchar(40), password varchar(30) not null);");
 
   db.run("create table artist ( artist_id integer primary key, artist_name varchar(50) not null, description varchar(255), website varchar(255), genre varchar(25) );");
 

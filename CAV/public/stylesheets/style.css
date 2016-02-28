@@ -33,7 +33,7 @@
 	color: #000;
 	border: solid;
 	background: rgba(255, 255, 255, .75);
-	/*top bottom left right, symmetrical, so also top and bottotm, 
+	/*top bottom left right, symmetrical, so also top and bottotm,
 	left and right if 2 values, all 4 if one value */
 	/*curves borders*/
 	-webkit-border-radius: 15px;

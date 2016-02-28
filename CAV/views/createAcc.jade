@@ -5,7 +5,7 @@ html
     // Link to css style sheet
     link(rel='stylesheet', type='text/css', href='/stylesheets/createAcc.css')
     // Linking favicon
-    link(type='image/x-icon', href='favicon.ico', rel='shortcut icon')
+    link(type='image/x-icon', href='public/images/favicon.ico', rel='shortcut icon')
     title CAV Home
   body.contain
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
@@ -26,19 +26,16 @@ html
           li(style='margin-left: 3px;')
               button#Login(onclick="location.href='login'") Login
       .box.create
-        form(id='create-account', action='#', method='post', accept-charset='UTF-8')
+        #create-account
           fieldset
             legend Create Account
-            input#submitted(type='hidden', name='submitted', value='1')
             p * Required Fields
             label(for='username') Username * :
-            input#username(type='text', name='username', maxlength='50')
-            label(for='fullname') Full Name * :
-            input#fullname(type='text', name='fullname', maxlength='50')
-            label(for='email') Email * :
-            input#email(type='text', name='email', maxlength='50')
+            input#username(type='text', name='username', maxlength='20')
+            label(for='fullname') Full Name :
+            input#fullname(type='text', name='fullname', maxlength='40')
             label(for='password') Password * :
-            input#password(type='password', name='password', maxlength='50')
+            input#password(type='password', name='password', maxlength='30')
             button#btnSubmit Submit
     footer.box
       h2 This is our footer
