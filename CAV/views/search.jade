@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    // Link to css style sheet
+    link(rel='stylesheet', href='/stylesheets/search.css')
+    title CAV Home
+  body.contain
+    .clearfix
+      .box.half.titleheight.left
+        h1 Welcome to CAV
+      nav.box.half.right
+        ul
+          li(style='margin-left: 3px;')
+            button#Home(onclick="location.href='/'") Home
+          li(style='margin-left: 3px;')
+            button#Search(onclick="location.href='search'") Search
+          li(style='margin-left: 3px;')
+            button#CreateAccount(onclick="location.href='createAcc'") Create Account
+          li(style='margin-left: 3px;')
+            button#Account(onclick="location.href='account'") Account
+          li(style='margin-left: 3px;')
+              button#Login(onclick="location.href='login'") Login
+    footer.box
+      h2 This is our footer

@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    .clearfix
+      .box.half.titleheight.left
+        h1= title
+      nav.box.half.right
+        ul
+          li(style='margin-left: 3px;')
+            button#Home(onclick="location.href='/'") Home
+          li(style='margin-left: 3px;')
+            button#Search(onclick="location.href='search'") Search
+          li(style='margin-left: 3px;')
+            button#CreateAccount(onclick="location.href='createAcc'") Create Account
+          li(style='margin-left: 3px;')
+            button#Account(onclick="location.href='account'") Account
+          li(style='margin-left: 3px;')
+              button#Login(onclick="location.href='login'") Login
+    .box.clearfix
+      img.imgmarge(src='https://placehold.it/940X360')
+    .clearfix
+      article.box.welcome.left
+        h2 Welcome
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      article.box.right.trendwidth
+        h2 Now Trending
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    footer.box
+      h2 This is our footer

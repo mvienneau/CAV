@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    // Link to css style sheet
+    link(rel='stylesheet', type='text/css', href='/stylesheets/login.css')
+    // Linking favicon
+    link(type='image/x-icon', href='favicon.ico', rel='shortcut icon')
+    title CAV Home
+  body.contain
+    .clearfix
+      .box.half.titleheight.left
+        h1 Welcome to CAV
+      nav.box.half.right
+        ul
+          li(style='margin-left: 3px;')
+            button#Home(onclick="location.href='/'") Home
+          li(style='margin-left: 3px;')
+            button#Search(onclick="location.href='search'") Search
+          li(style='margin-left: 3px;')
+            button#CreateAccount(onclick="location.href='createAcc'") Create Account
+          li(style='margin-left: 3px;')
+            button#Account(onclick="location.href='account'") Account
+          li(style='margin-left: 3px;')
+              button#Login(onclick="location.href='login'") Login
+      .box.loginwidth
+        form#login(action='#', method='post', accept-charset='UTF-8')
+          fieldset
+            legend Login
+            input#submitted(type='hidden', name='submitted', value='1')
+            p * Required Fields
+            label(for='username') Username * :
+            input#username(type='text', name='username', maxlength='50')
+            label(for='password') Password * :
+            input#password(type='password', name='password', maxlength='50')
+            input(type='submit', name='Submit', value='Submit')
+    footer.box
+      h2 This is our footer
