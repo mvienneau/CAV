@@ -7,11 +7,11 @@ router.post('/', function(req, res) {
       db.all("select count(*) as count from user where username = \"" + req.body.username + "\"", function(err, row) {
         if (row[0].count == 0) {
           db.run("insert into user values (null, \"" + req.body.username + "\", \"" + req.body.fullname + "\", \"" + req.body.password + "\")")
-          res.json({success: true});
+          res.json({success: true, error: false});
           res.end();
         }
         else {
-          res.json({success: false});
+          res.json({success: false, error: true});
           res.end();
         }
     });

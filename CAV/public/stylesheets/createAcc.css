@@ -92,7 +92,7 @@ nav{
 }
 
 /*For requried field*/
-div form fieldset p{
+div fieldset p{
 	color: red;
   padding-top: 6px;
   padding-bottom: 6px;
