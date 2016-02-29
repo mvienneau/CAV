@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+//var sess;
 
 router.post('/', function(req, res) {
   var db = req.db;
@@ -8,6 +9,9 @@ router.post('/', function(req, res) {
         if (row[0].count == 0) {
           db.run("insert into user values (null, \"" + req.body.username + "\", \"" + req.body.fullname + "\", \"" + req.body.password + "\")")
           res.json({success: true, error: false});
+          //sess = req.session
+          //sess.username = req.body.username;
+          //sess.password = req.body.password;
           res.end();
         }
         else {
@@ -29,7 +33,15 @@ router.get('/', function(req, res) {
     	collection.push(row.username);
     });
 
-  res.render('createAcc', { title: 'CAV' });
+    res.render('createAcc', { title: 'CAV'});
+    /*
+    if (sess.username == undefined) {
+      res.render('createAcc', { title: 'CAV', username: '' });
+    }
+    else {
+      res.render('createAcc', { title: 'CAV', username: sess.username });
+    }
+    */
   })
 
 });

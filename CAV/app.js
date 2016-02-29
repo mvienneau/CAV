@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session')
 
 //Users = Account
 var index = require('./routes/index');
@@ -31,6 +32,7 @@ app.set('view engine', 'jade');
 //Make db accesseble
 app.use(function(req,res,next){
   req.db = db;
+
   next();
 })
 //******************************
@@ -41,6 +43,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
+app.use(session({secret: 'secret'}));
 
 app.use('/', index);
 app.use('/search', search);
