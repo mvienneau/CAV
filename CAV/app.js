@@ -14,6 +14,7 @@ var login = require('./routes/login');
 var createAcc = require('./routes/createAcc');
 
 var app = express();
+app.set('trust proxy', 1);
 
 //*******************************
 //Database
@@ -32,7 +33,6 @@ app.set('view engine', 'jade');
 //Make db accesseble
 app.use(function(req,res,next){
   req.db = db;
-
   next();
 })
 //******************************
@@ -43,7 +43,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
-app.use(session({secret: 'secret'}));
+app.use(session({
+  secret: 'boulder',
+  resave: true,
+  saveUninitialized: true,
+  cookie: { secure: 'auto', maxAge: 60000}
+}));
 
 app.use('/', index);
 app.use('/search', search);

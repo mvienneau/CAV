@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
-//var sess;
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  //sess = req.sess;
+  var sess = req.session;
+  res.render('login', {title: 'CAV', username: sess.username});
+
+  /*
   var db = req.db;
   var collection = [];
   db.serialize(function(){
@@ -14,7 +16,7 @@ router.get('/', function(req, res) {
   	});
 
     res.render('login', { title: 'CAV' })
-    /*
+
     if (sess.username == undefined) {
       res.render('login', { title: 'CAV', username: '' });
     }
@@ -22,8 +24,6 @@ router.get('/', function(req, res) {
       res.render('login', { title: 'CAV', username: sess.username });
     }
     */
-  });
-
 
 });
 

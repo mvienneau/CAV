@@ -3,7 +3,8 @@ extends layout
 block content
     .clearfix
       .box.half.titleheight.left
-        h1= title
+        h1 #{title}
+        h2 #{username}
       nav.box.half.right
         ul
           li(style='margin-left: 3px;')
@@ -17,7 +18,7 @@ block content
           li(style='margin-left: 3px;')
               button#Login(onclick="location.href='login'") Login
     .box.clearfix
-      img.imgmarge(src='/puglic/images/centerpiece.jpg')
+      img.imgmarge(src='/public/images/centerpiece.jpg')
     .clearfix
       article.box.welcome.left
         h2 Welcome

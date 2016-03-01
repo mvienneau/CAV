@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
-//var sess;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //sess = req.sess;
 	//DO NOT UNCOMMENT UNLESS YOU WANT 5000000 DRAKES IN OUR TABLE
 	/*
   	db.serialize(function(){
@@ -14,16 +12,8 @@ router.get('/', function(req, res, next) {
   		});
   	})
 	*/
-
-  res.render('index', { title: 'CAV' });
-  /*
-  if (sess.username === undefined) {
-    res.render('index', { title: 'CAV', username: '' });
-  }
-  else {
-    res.render('index', { title: 'CAV', username: sess.username });
-  }
-  */
+  var sess = req.session;
+  res.render('index', {title: 'CAV', username: sess.username});
 });
 
 //db.close();
