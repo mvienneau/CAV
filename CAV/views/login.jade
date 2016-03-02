@@ -8,6 +8,8 @@ html
     link(type='image/x-icon', href='favicon.ico', rel='shortcut icon')
     title CAV Login
   body.contain
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='/javascripts/global.js')
     .clearfix
       .box.half.titleheight.left
         h1 #{title}
@@ -25,15 +27,14 @@ html
           li(style='margin-left: 3px;')
               button#Login(onclick="location.href='login'") Login
       .box.loginwidth
-        form#login(action='#', method='post', accept-charset='UTF-8')
+        #login
           fieldset
             legend Login
-            input#submitted(type='hidden', name='submitted', value='1')
             p * Required Fields
             label(for='username') Username * :
             input#username(type='text', name='username', maxlength='50')
             label(for='password') Password * :
             input#password(type='password', name='password', maxlength='50')
-            input(type='submit', name='Submit', value='Submit')
+            button#loginSubmit Submit
     footer.box
       h2 This is our footer
