@@ -6,7 +6,7 @@ router.post('/', function(req, res){
   var db = req.db;
   var exists = true;
   db.serialize( function() {
-    db.all("select count(*) as count from user where username = \"" + req.body.username + "\"", function(err, row) {
+    db.all("select count(*) as count from user where username = \"" + req.body.username + "\"" + "and password = \"" + req.body.password + "\"", function(err, row) {
       if (row[0].count == 0){
         exists = false;
         res.json({success: false, error: true});
@@ -19,15 +19,6 @@ router.post('/', function(req, res){
         res.end();
       }
     });
-    /*
-    db.all("select count(*) as count from user where password = \"" + req.body.password + "\"", function(err, row) {
-      if (row[0].count == 0){
-        exists = false;
-        res.json({success: false, error: true});
-        res.end();
-      }
-    });
-*/
   });
 
   
