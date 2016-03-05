@@ -1,31 +1,26 @@
 doctype html
-html
+html.no-js(lang='en')
   head
     meta(charset='utf-8')
-    // Link to css style sheet
-    link(rel='stylesheet', href='/stylesheets/account.css')
-    title CAV Account
-  body.contain
-    .clearfix
-      .box.half.titleheight.left
-        form(action='/')
-          .myButton
-            input(type='submit', onclick="location.href='/'", name='', value='')
-            // above three lines are the logo button that redirects home//
-        h2 #{username}
-      nav.box.half.right
-        ul
-          li(style='margin-left: 3px;')
-            button#Home(onclick="location.href='/'") Home
-          li(style='margin-left: 3px;')
-            button#Search(onclick="location.href='search'") Search
-          li(style='margin-left: 3px;')
-            button#CreateAccount(onclick="location.href='createAcc'") Create Account
-          li(style='margin-left: 3px;')
-            button#Account(onclick="location.href='account'") Account
-          li(style='margin-left: 3px;')
-              button#Login(onclick="location.href='login'") Login
-      .row.medium-8.large-7.columns
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Foundation | Welcome
+    link(rel='stylesheet', href='http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css')
+  body
+    .top-bar
+      .top-bar-left
+        ul.menu
+          li.menu-text Blog
+          li
+            a(href='#') One
+          li
+            a(href='#') Two
+          li
+            a(href='#') Three
+    .callout.large.primary
+      .row.column.text-center
+        h1 Our Blog
+        h2.subheader Such a Simple Blog Layout
+    .row.medium-8.large-7.columns
       .blog-post
         h3
           | Awesome blog post title 
@@ -82,5 +77,3 @@ html
     script(src='http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js')
     script.
       $(document).foundation();
-    footer.box
-      h2 This is our footer
