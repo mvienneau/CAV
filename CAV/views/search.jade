@@ -6,10 +6,12 @@ html
     link(rel='stylesheet', href='/stylesheets/search.css')
     title CAV Search
   body.contain
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='/javascripts/userauth.js')
     .clearfix
       .box.half.titleheight.left
         h1 #{title}
-        h2 #{username}
+        h2#username #{username}
       nav.box.half.right
         ul
           li(style='margin-left: 3px;')

@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res) {
   var sess = req.session;
-  res.render('search', {title: 'CAV', username: sess.username});
+  res.render('search', {title: 'CAV'});
   var db = req.db;
   var collection = [];
   /*

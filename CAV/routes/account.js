@@ -4,10 +4,9 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res) {
   var sess = req.session;
-  res.render('account', {title: 'CAV', username: sess.username});
+  res.render('account', {title: 'CAV'});
 
-  var db = req.db;
-  var collection = [];
+
   /*
   db.serialize(function(){
 

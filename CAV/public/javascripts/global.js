@@ -42,7 +42,7 @@ function userLogin(event){
 		});
 	}
 	else{
-		alert('please fill in all fields');
+		alert('Please fill in all fields');
 		return false;
 	}
 }
@@ -92,4 +92,3 @@ function addUser(event){
 		return false;
 	}
 }
-

@@ -21,14 +21,14 @@ router.post('/', function(req, res){
     });
   });
 
-  
+
 })
 
 
 /* GET users listing. */
 router.get('/', function(req, res) {
   var sess = req.session;
-  res.render('login', {title: 'CAV', username: sess.username});
+  res.render('login', {title: 'CAV'});
 
   /*
   var db = req.db;

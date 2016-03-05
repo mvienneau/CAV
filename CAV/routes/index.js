@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   	})
 	*/
   var sess = req.session;
-  res.render('index', {title: 'CAV', username: sess.username});
+  res.render('index', {title: 'CAV'});
 });
 
 //db.close();
